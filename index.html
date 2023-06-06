@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de HTML e Js</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/Logo.png" alt="" width="200px" class="img">
+      <nav>
+        <p>Gerador de HTML e JS</p>
+      </nav>
+      <label class="switch">
+        <input type="checkbox" id="claro">
+        <span class="slider round"></span>
+      </label>      
+    </header>
+    <main id="myMain">
+      <section id="paginas">
+        <section class="inputOutput" id="page1">
+          <div class="inserts">
+              <div id="areahtml">
+                  <p>insira seu codigo em html:</p><br>
+                  <textarea name="codeHtml" id="codeHtml" cols="30" rows="20" maxlength="1000" runat="server" style="resize: none;"></textarea>
+              </div>
+              <div id="areajs">
+                  <p>insira seu codigo em JS:</p><br>
+                  <textarea name="codeJs" id="codeJs" cols="30" rows="20" maxlength="1000" runat="server" style="resize: none;"></textarea>
+              </div>
+          </div>
+        </section>
+      </section>
+      <section id="page2">
+      </section>
+    </main>
+    <div id="btDiv">
+      <div id="lim"><input type="button" id="btnLimpar" value="Limpar"/></div>
+      <div id="exe"><input type="button" id="btnExecutar" value="Gerar"/></div>
+    </div>
+
+    <footer><h1>Todos os direitos reservados ao Grupo 1</h1></footer>
+    <script id="jsUser"></script>
+    <script src="./node.js"></script>
+  </body>
+  <!-- Para adicionar o codigo da logica JS va para pasta SRC no aquivo main.js -->
+</html>
